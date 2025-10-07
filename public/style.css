@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#111}
+.container{max-width:1000px;margin:24px auto;padding:16px;background:#fff;border-radius:8px;box-shadow:0 4px 18px rgba(16,24,40,0.08)}
+.content{display:flex;gap:16px;flex-wrap:wrap}
+form{flex:1;min-width:300px}
+.results{flex:1;min-width:300px;background:#fafafa;padding:12px;border-radius:6px}
+#friendly-results{background:#fff;padding:12px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);margin-bottom:12px}
+#friendly-results table{width:100%;border-collapse:collapse}
+#friendly-results th{width:50%;text-align:left;padding:6px;color:#444}
+#friendly-results td{padding:6px}
+#friendly-results .muted{color:#666;margin-top:8px}
+button#toggle-raw{background:#6b7280;color:#fff;padding:6px 10px;border-radius:6px;border:0;margin-top:8px;cursor:pointer}
+.savings-positive{color:#0b9a5f;font-weight:700}
+.savings-negative{color:#d14343;font-weight:700}
+.verdict{font-size:1rem;margin:8px 0;padding:8px;background:#f3f4f6;border-radius:6px}
+label{display:block;margin-bottom:8px}
+label input, label select{width:100%;padding:8px;margin-top:4px;border:1px solid #ddd;border-radius:4px}
+.form-actions{margin-top:12px}
+button{padding:8px 12px;border-radius:6px;border:0;background:#0b74de;color:#fff;cursor:pointer}
+button[disabled]{opacity:0.6}
+pre{white-space:pre-wrap}
+
+@media (max-width:700px){.content{flex-direction:column}}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Invoicing ROI Simulator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Invoicing ROI Simulator</h1>
+    <div class="content">
+      <form id="sim-form">
+        <label>Scenario name<input name="scenario_name" placeholder="Q4_Pilot" /></label>
+        <label>Monthly invoice volume<input name="monthly_invoice_volume" type="number" value="2000" /></label>
+        <label>AP staff (count)<input name="num_ap_staff" type="number" value="3" /></label>
+        <label>Avg hours per invoice<input name="avg_hours_per_invoice" type="number" step="0.01" value="0.17" /></label>
+        <label>Hourly wage<input name="hourly_wage" type="number" step="0.01" value="30" /></label>
+        <label>Error rate (manual, fraction)<input name="error_rate_manual" type="number" step="0.01" value="0.5" /></label>
+        <label>Error cost per incident<input name="error_cost" type="number" step="0.01" value="100" /></label>
+        <label>Time horizon (months)<input name="time_horizon_months" type="number" value="36" /></label>
+        <label>One-time implementation cost<input name="one_time_implementation_cost" type="number" value="50000" /></label>
+        <div class="form-actions">
+          <button type="button" id="calc">Calculate</button>
+          <button type="button" id="save">Save scenario</button>
+          <select id="scenarios" style="margin-left:8px"></select>
+          <button type="button" id="load">Load</button>
+          <button type="button" id="report">Get Report (email-gated)</button>
+        </div>
+      </form>
+
+      <div id="results" class="results">
+        <h2>Results</h2>
+        <pre id="results-json">Fill inputs and click Calculate</pre>
+      </div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
