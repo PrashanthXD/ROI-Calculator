@@ -2,8 +2,8 @@ Frontend: Single-page web app (SPA) built with vanilla HTML, CSS, and JavaScript
 
 Backend: Node.js with Express for serving RESTful APIs and static assets.
 
-Database: SQLite (via better-sqlite3) for fast, file-based persistence of scenarios.
+Database: SQLite  for fast, file-based persistence of scenarios.
 
 API Layer: REST endpoints handle simulation, CRUD for saved scenarios, and gated report generation.
 
-Deployment: Runs locally (Node.js) or deployable via Render/Vercel with minor modifications.
+Deployment: Runs locally (Node.js) 
