@@ -1,0 +1,30 @@
+{
+  "scenarios": [
+    {
+      "one_time_implementation_cost": 30000,
+      "num_ap_staff": 2,
+      "avg_hours_per_invoice": 0.2,
+      "error_rate_manual": 0.2,
+      "monthly_invoice_volume": 1500,
+      "time_horizon_months": 24,
+      "hourly_wage": 25,
+      "scenario_name": "Demo",
+      "error_cost": 120,
+      "id": "89fd97a0-2ec4-4c0d-aa6d-1be23a9aa7ca",
+      "created_at": 1759834912430
+    },
+    {
+      "scenario_name": "",
+      "monthly_invoice_volume": "2000",
+      "num_ap_staff": "3",
+      "avg_hours_per_invoice": "0.17",
+      "hourly_wage": "30",
+      "error_rate_manual": "0.5",
+      "error_cost": "100",
+      "time_horizon_months": "36",
+      "one_time_implementation_cost": "50000",
+      "id": "0fac6e0b-2088-4ed0-82d5-fd08972f90d5",
+      "created_at": 1759834349412
+    }
+  ]
+}

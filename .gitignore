@@ -1,0 +1,10 @@
+node_modules/
+npm-debug.log*
+server.log
+scenarios.json
+.env
+.env.local
+.DS_Store
+.vscode/
+dist/
+.idea/
